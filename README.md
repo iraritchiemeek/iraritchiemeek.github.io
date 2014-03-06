@@ -1,6 +1,9 @@
 # Behavior Drill Post It Board V1 
  
-##Learning Competencies 
+##Learning Competencies
+
+- OOJS 
+- Javascript event binding
 
 ##Summary 
 
