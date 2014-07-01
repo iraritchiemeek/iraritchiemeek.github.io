@@ -18,13 +18,11 @@ To solve this challenge, you'll need to utilize the following tools:
 
 ## Objectives
 
-### Grab the Gist
+### Make a Post-It Board
 
-Download all of the files in [the gist](https://gist.github.com/dbc-challenges/5101afb8670c8273f41d).  All of the HTML and CSS has been written, you only need to add your own jQuery (and jQuery UI) flavored JavaScript.
+All of the HTML and CSS has been written, you only need to add your own jQuery (and jQuery UI) flavored JavaScript.
 
 By the way, just because the HTML and CSS is provided for you doesn't mean that you shouldn't look it over.  Never know what you might learn from a little browsing.
-
-### Make a Post-It Board
 
 Your job is to figure out how to accurately model the components of this application in JavaScript, giving each object the appropriate properties and behavior.  A rudimentary skeleton has been provided for you, outlining two primary objects.  You can define any other objects you think you may need, though.
 
