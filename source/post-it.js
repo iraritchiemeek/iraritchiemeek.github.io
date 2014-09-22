@@ -17,5 +17,5 @@ var PostIt = function() {
 
 $(function() {
   // This code will run when the DOM has finished loading
-  Board.new('#board');
+  new Board('#board');
 });
