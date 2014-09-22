@@ -15,6 +15,8 @@ To solve this challenge, you'll need to utilize the following tools:
 
 - [jQuery UI](http://jqueryui.com/)
 - [The HTML `contenteditable` attribute](https://developer.mozilla.org/en-US/docs/HTML/Content_Editable)
+ - [Example 1](http://html5doctor.com/the-contenteditable-attribute/)
+ - [Example 2](http://blog.teamtreehouse.com/native-rich-text-editing-with-the-contenteditable-attribute)
 
 ## Objectives
 
