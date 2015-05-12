@@ -10,19 +10,18 @@
   position: absolute !important;
   width: 160px;
   height: 160px;
-  background-color: yellow;
   box-shadow: -2px 2px 5px #555;
   overflow: hidden;
 }
 
 .post-it .header {
-  background-color: #c2c25b;
+  background-color: #939393;
   text-align: right;
   padding: 2px;
 }
 
 .post-it .header:hover {
-  background-color: #a8a860;
+  background-color: #545454;
 }
 
 .post-it .header a, .post-it .header a:visited {
@@ -32,11 +31,15 @@
 }
 
 .post-it .header a:hover {
-  color: #eee;
+  color: #939393;
 }
 
 .post-it .content {
   padding: 10px;
   min-height: 70px;
   outline: none;
+}
+
+.ui-resizable-handle{
+  background: url('');
 }
