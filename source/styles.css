@@ -1,6 +1,6 @@
 #board {
   font-family: monospace;
-  background-color: #193441;
+  background-color: #8BD3F4;
   margin: 0;
   padding: 0;
   position: relative;
@@ -12,16 +12,19 @@
   height: 160px;
   box-shadow: -2px 2px 5px #555;
   overflow: hidden;
+
 }
 
 .post-it .header {
-  background-color: #939393;
+  background-color: white;
+  opacity: 0.2;
   text-align: right;
-  padding: 2px;
+  padding: 4px;
 }
 
 .post-it .header:hover {
-  background-color: #545454;
+  background-color: white;
+  opacity: 0;
 }
 
 .post-it .header a, .post-it .header a:visited {
@@ -35,6 +38,8 @@
 }
 
 .post-it .content {
+  cursor: url('http://www.rw-designer.com/cursor-view/14464.png'), auto;
+  height: 100%;
   padding: 10px;
   min-height: 70px;
   outline: none;
@@ -42,4 +47,14 @@
 
 .ui-resizable-handle{
   background: url('');
+}
+
+.post-it:nth-child(even) {
+  transform:rotate(4deg);
+}
+.post-it:nth-child(3n) {
+  transform:rotate(-3deg);
+}
+.post-it:nth-child(5n) {
+  transform:rotate(5deg);
 }

@@ -9,27 +9,29 @@ $(function() {
     $('.ui-dialog .ui-resizable-se').css('backgroundImage', 'url("")');
 
     $('#board').on('click', function(e) {
-      div = $("<div>")
-      div.attr({class: 'post-it'});
-      div.css({top: e.pageY, left: e.pageX, backgroundColor: color()})
-      div.append('<div class="header"></div>')
-      div.append('<div class="content" contentEditable="true"></div>')
-      $('#board').append(div)
+      if (this === e.target) {
+        div = $("<div>")
+        div.attr({class: 'post-it'});
+        div.css({top: e.pageY, left: e.pageX, backgroundColor: color()})
+        div.append('<div class="header"></div>')
+        div.append('<div class="content" contentEditable="true"></div>')
+        $('#board').append(div)
 
-      $('.post-it').draggable({
-        cursor: 'move',
-        containment: "#board",
-        handle: ".header"
-      });
+        $('.post-it').draggable({
+          cursor: 'move',
+          containment: "#board",
+          handle: ".header"
+        });
 
-      $('.post-it').resizable({
-        ghost: true,
-        aspectRatio: true
-      });
+        $('.post-it').resizable({
+          ghost: true,
+          aspectRatio: true
+        });
 
-      $('.post-it .header').on('dblclick', function() {
-        $(this.parentElement).remove();
-      });
+        $('.post-it .header').on('dblclick', function() {
+          $(this.parentElement).remove();
+        });
+      }
     });
 
 
