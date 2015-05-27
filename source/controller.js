@@ -14,8 +14,11 @@ $(function() {
   });
 
   $(document).on('dblclick', '.post-it .header' ,function() {
-    console.log('tree')
     $(this.parentElement).remove();
+  });
+
+  $(document).on('click', '.post-it' ,function() {
+    postIt.bringToFront(this);
   });
 
 });

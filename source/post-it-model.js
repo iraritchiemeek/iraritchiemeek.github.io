@@ -1,5 +1,4 @@
 function PostIt() {
-  this.color = null
 }
 
 PostIt.prototype.createNote = function () {
@@ -29,3 +28,8 @@ PostIt.prototype.colorNote = function () {
   this.color = 'rgb(' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ')';
   $('.post-it').last().css('backgroundColor', this.color)
 }
+
+PostIt.prototype.bringToFront = function(current_note) {
+  $('.post-it').css('zIndex', 0)
+  $(current_note).css('zIndex', 1)
+};
