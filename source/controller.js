@@ -1,6 +1,9 @@
 $(function() {
 
+  var board = new Board();
   var postIt = new PostIt();
+  board.addTrashIcon('imgs/trash.png');
+  board.addTrashDropable();
 
   $('#board').on('mousedown', function(e) {
     if (this === e.target) {
@@ -20,5 +23,6 @@ $(function() {
   $(document).on('click', '.post-it' ,function() {
     postIt.bringToFront(this);
   });
+
 
 });

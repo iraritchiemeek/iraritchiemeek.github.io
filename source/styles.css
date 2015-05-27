@@ -58,3 +58,11 @@
 .post-it:nth-child(5n) {
   transform:rotate(5deg);
 }
+
+#trash {
+  height: 100px;
+  width: 100px;
+  position:absolute;
+  bottom:0;
+  right:0;
+}
