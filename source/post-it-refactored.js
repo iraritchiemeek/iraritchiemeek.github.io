@@ -29,10 +29,3 @@ PostIt.prototype.colorNote = function () {
   this.color = 'rgb(' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ')';
   $('.post-it').last().css('backgroundColor', this.color)
 }
-
-// PostIt.prototype.addDeleteEvent = function () {
-//   $('.post-it .header').last().on('dblclick', function() {
-//     $(this.parentElement).remove();
-//   });
-// }
-
