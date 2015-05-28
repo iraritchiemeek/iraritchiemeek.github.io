@@ -7,6 +7,7 @@ $(function() {
   board.addTrashDropable();
 
   $('#board').on('mousedown', function(e) {
+    $('#instructions').fadeOut(1600);
     if (this === e.target) {
       var x = e.pageX
       var y = e.pageY
@@ -24,8 +25,6 @@ $(function() {
   $(document).on('click', '#github' ,function() {
     board.addGithubLink();
   });
-
-
 
 
 });
