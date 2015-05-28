@@ -2,7 +2,8 @@ $(function() {
 
   var board = new Board();
   var postIt = new PostIt();
-  board.addTrashIcon('imgs/trash.png');
+  board.addImage('imgs/trash.png');
+  board.addImage('imgs/github.png');
   board.addTrashDropable();
 
   $('#board').on('mousedown', function(e) {
@@ -16,13 +17,15 @@ $(function() {
     }
   });
 
-  $(document).on('dblclick', '.post-it .header' ,function() {
-    $(this.parentElement).remove();
-  });
-
   $(document).on('click', '.post-it' ,function() {
     postIt.bringToFront(this);
   });
+
+  $(document).on('click', '#github' ,function() {
+    board.addGithubLink();
+  });
+
+
 
 
 });
