@@ -11,7 +11,7 @@
   width: 160px;
   height: 160px;
   box-shadow: -2px 2px 5px #555;
-  overflow: hidden;
+  overflow: scroll;
 
 }
 
@@ -38,7 +38,7 @@
 }
 
 .post-it .content {
-  cursor: url('http://www.rw-designer.com/cursor-view/14464.png'), auto;
+  cursor: url('imgs/pen.png'), auto;
   height: 100%;
   padding: 10px;
   min-height: 70px;
@@ -57,4 +57,29 @@
 }
 .post-it:nth-child(5n) {
   transform:rotate(5deg);
+}
+
+#trash {
+  height: 100px;
+  width: 100px;
+  position:absolute;
+  bottom:0;
+  right:0;
+}
+
+#github {
+  height: 100px;
+  width: 100px;
+  position:absolute;
+  opacity: 0.7;
+  top:0;
+  right:0;
+}
+
+#instructions {
+  font-size: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
 }

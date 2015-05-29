@@ -1,5 +1,4 @@
 function PostIt() {
-  this.color = null
 }
 
 PostIt.prototype.createNote = function () {
@@ -30,9 +29,7 @@ PostIt.prototype.colorNote = function () {
   $('.post-it').last().css('backgroundColor', this.color)
 }
 
-// PostIt.prototype.addDeleteEvent = function () {
-//   $('.post-it .header').last().on('dblclick', function() {
-//     $(this.parentElement).remove();
-//   });
-// }
-
+PostIt.prototype.bringToFront = function(current_note) {
+  $('.post-it').css('zIndex', 0)
+  $(current_note).css('zIndex', 1)
+};
