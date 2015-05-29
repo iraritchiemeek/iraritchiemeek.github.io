@@ -38,7 +38,7 @@
 }
 
 .post-it .content {
-  cursor: url('imgs/pen.png'), auto;
+  cursor: url('../imgs/pen.png'), auto;
   height: 100%;
   padding: 10px;
   min-height: 70px;
