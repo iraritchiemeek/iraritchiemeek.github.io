@@ -1,3 +1,3 @@
 ### Post-it 
 
-ira-post-it.herokuapp.com
+https://ira-post-it.herokuapp.com
