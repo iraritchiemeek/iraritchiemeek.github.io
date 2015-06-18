@@ -1,5 +1,4 @@
 $(function() {
-
   var board = new Board();
   var postIt = new PostIt();
   board.addImage('imgs/trash.png');

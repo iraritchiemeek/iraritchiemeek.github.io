@@ -8,20 +8,24 @@
   <link rel="stylesheet" href="lib/jasmine-2.3.4/jasmine.css">
 
   <script src="lib/jquery-2.1.4.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.10.1/jquery-ui.js"></script>
   <script src="lib/jasmine-2.3.4/jasmine.js"></script>
   <script src="lib/jasmine-2.3.4/jasmine-html.js"></script>
   <script src="lib/jasmine-2.3.4/boot.js"></script>
   <script src="lib/jasmine-2.3.4/jasmine-jquery.js"></script>
 
   <!-- include source files here... -->
+
   <script src="public/js/board-model.js"></script>
   <script src="public/js/post-it-model.js"></script>
+  <script src="public/js/controller.js"></script>
 
   <!-- include spec files here... -->
   <script src="spec/BoardSpec.js"></script>
 
 </head>
 
-<body>
+<body id="board">
+    <div id='instructions'>Click to add a note</div>
 </body>
 </html>

@@ -1,16 +1,25 @@
 describe("Board", function() {
   var board;
-  var container
+
+
 
   beforeEach(function() {
-    container = "<div id='board'><div id='instructions'>Click to add a note</div></div>"
+    jasmine.getFixtures().fixturesPath = 'http://localhost:8000/';
+    loadFixtures("/spec/board-fixture.html")
+    $.holdReady(false);
     board = new Board();
   });
 
 
-  it("should display instructions", function() {
-    console.log($(container))
-    expect($(container)).toContainElement("#instructions");
+  it("should display correct elements on load", function() {
+    console.log($("#gfyukkuyvuyk").children())
+    expect($("#board")).toContainElement("#instructions");
+    expect($("#board")).toContainElement("#github");
+    expect($("#board")).toContainElement("#trash");
   });
 
+  it("Adds a post it note on click", function(){
+    $("#board").click()
+    expect($("#board")).toContainElement($(".post-it"))
+  })
 });
