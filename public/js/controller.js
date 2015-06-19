@@ -8,7 +8,9 @@ $(function() {
 
   $('#board').on('mousedown', function(e) {
     console.log('yes')
-    $('#instructions').fadeOut(1600);
+    $('#instructions').fadeOut(1600, function(){
+      $('#instructions').remove()
+    });
     if (this === e.target) {
       var x = e.pageX
       var y = e.pageY

@@ -12,8 +12,24 @@ describe("Board", function() {
     expect($("#board")).toContainElement("#trash");
   });
 
-  it("Adds a post it note on click", function(){
-    $("#board").mousedown()
-    expect($("#board")).toContainElement($(".post-it"))
+  describe("On click", function(){
+    
+    beforeEach(function(done) {
+      setTimeout(function() {
+        $("#board").mousedown()
+        done();
+      }, 2000);
+    });
+
+
+    it("Adds a post it note", function(){
+      expect($("#board")).toContainElement($(".post-it"))
+    })
+
+    it("Hides instructions", function() {
+      expect($("#board")).not.toContainElement("#instructions")
+    })
+    
   })
+
 });
